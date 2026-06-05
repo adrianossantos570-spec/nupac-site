@@ -550,3 +550,28 @@ section {
         transform: none !important;
     }
 }
+
+
+
+/* ======== RESPONSIVIDADE ======== */
+@media screen and (max-width: 1020px) {
+    .btn-abrir-menu {
+        display: block;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        z-index: 999;
+    }
+
+    .navbar {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1021px) {
+
+    .menu-mobile,
+    .btn-abrir-menu {
+        display: none;
+    }
+}
