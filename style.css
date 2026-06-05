@@ -550,3 +550,33 @@ section {
         transform: none !important;
     }
 }
+
+/* --- CORREÇÃO FINAL PARA CELULAR (COPIE E COLE NO FINAL DO STYLE.CSS) --- */
+
+@media (max-width: 768px) {
+    /* Garante que nada ultrapasse a largura da tela do celular */
+    body {
+        overflow-x: hidden;
+        width: 100%;
+    }
+
+    /* Força todas as grids a ficarem em uma coluna apenas */
+    .donate-grid, 
+    .gallery-grid, 
+    .cards-impacto {
+        grid-template-columns: 1fr !important;
+        display: block !important; /* Força um embaixo do outro */
+        width: 100%;
+    }
+
+    /* Ajusta o tamanho das seções para não cortarem */
+    section {
+        padding: 5rem 5%;
+    }
+
+    /* Garante que imagens não estourem a tela */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
