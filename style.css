@@ -6,7 +6,6 @@
     --black: #1e1611;
     --bg: #a66e4ea2;
     --border: 0.1rem solid rgba(255, 255, 255, 0.25);
-    font-size: 10px;
 }
 
 * {
@@ -20,9 +19,22 @@
     font-family: "Roboto", sans-serif;
 }
 
+html {
+    font-size: 62.5%; /* 10px */
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: var(--bg);
     overflow-x: hidden;
+    width: 100%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
 section {
@@ -31,552 +43,83 @@ section {
     max-width: 1400px;
 }
 
-.title {
-    font-size: 4rem;
-    color: var(--black);
-    text-align: center;
-    text-transform: uppercase;
-    margin-bottom: 2rem;
-    letter-spacing: 0.1rem;
-}
-
-.title span {
-    color: #fff;
-}
+.title { font-size: 4rem; color: var(--black); text-align: center; text-transform: uppercase; margin-bottom: 2rem; letter-spacing: 0.1rem; }
+.title span { color: #fff; }
 
 .btn {
-    background: var(--main-color);
-    color: #fff;
-    padding: 1.2rem 3.5rem;
-    font-size: 1.6rem;
-    font-weight: bold;
-    cursor: pointer;
-    margin-top: 1.5rem;
-    display: inline-block;
-    border-radius: 6px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.2s linear, letter-spacing 0.2s linear;
+    background: var(--main-color); color: #fff; padding: 1.2rem 3.5rem; font-size: 1.6rem; font-weight: bold; cursor: pointer; margin-top: 1.5rem; display: inline-block; border-radius: 6px; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); transition: background-color 0.2s linear, letter-spacing 0.2s linear;
 }
-
-.btn:hover {
-    letter-spacing: 0.1rem;
-    background-color: var(--black);
-}
+.btn:hover { letter-spacing: 0.1rem; background-color: var(--black); }
 
 /* BANNER DE AVISO */
-.top-alert-banner {
-    background-color: #d9534f;
-    color: #fff;
-    text-align: center;
-    padding: 1.2rem 2rem;
-    font-size: 1.5rem;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 100;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
-}
+.top-alert-banner { background-color: #d9534f; color: #fff; text-align: center; padding: 1.2rem 2rem; font-size: 1.5rem; position: fixed; top: 0; left: 0; right: 0; z-index: 100; box-shadow: 0 2px 10px rgba(0,0,0,0.2); }
+
+/* 2. BARRA DE NAVEGAÇÃO */
+.header { position: fixed; top: 4.3rem; left: 0; right: 0; z-index: 99; border-bottom: 0.1rem solid rgba(0, 0, 0, 0.1); background-color: var(--bg); }
+.header section { display: flex; align-items: center; justify-content: space-between; padding: 0.2rem 9%; }
+.navbar a { margin: 0 1.2rem; font-size: 1.7rem; color: #fff; font-weight: 500; display: inline-block; padding-bottom: 0.3rem; transition: color 0.2s linear; }
+.icons img { margin-left: 1.5rem; cursor: pointer; max-height: 40px; width: auto; }
+
+/* 3. SEÇÃO HOME */
+.home-container { background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("./background.png"); min-height: 100vh; background-position: center; background-size: cover; display: flex; align-items: center; }
+.home-container section { display: flex; align-items: center; width: 100%; min-height: calc(100vh - 11rem); padding-top: 15rem; padding-bottom: 6rem; }
+.content { max-width: 85rem; }
+.content h3 { color: #fff; font-size: 4.5rem; margin-bottom: 1.5rem; }
+.content p { color: #fff; font-size: 2.2rem; font-weight: 300; line-height: 1.6; }
+
+/* 4. SEÇÃO SOBRE */
+.about { background-color: var(--black); max-width: 100%; }
+.about .row { display: flex; align-items: center; gap: 5rem; }
+.about .container-image img { width: 100%; border-radius: 12px; }
+.about .row .content { flex: 1; }
+.about .row .content p { font-size: 1.6rem; color: #dfd5cd; line-height: 1.8; text-align: justify; }
+
+/* 5. GALERIA */
+.gallery-container { max-width: 1100px; margin: 8rem auto 0 auto; padding: 0 1.5rem; text-align: center; }
+.gallery-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2.5rem; justify-content: center; }
+.gallery-item { height: 320px; overflow: hidden; border-radius: 12px; box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5); }
+.gallery-item img { width: 100%; height: 100%; object-fit: cover; }
+
+/* 6. CONSCIENTIZAÇÃO */
+.conscientizacao-container { background-color: #573a28; max-width: 100%; text-align: center; }
+.cards-impacto { display: flex; gap: 3.5rem; justify-content: space-between; margin: 7rem 0; flex-wrap: wrap; }
+.cards-impacto .card { flex: 1; min-width: 300px; background: #fdfbf7; padding: 4rem 3rem; border-radius: 12px; }
+
+/* 7. SEÇÃO DOAÇÕES */
+.donate-container { background-color: var(--black); max-width: 100%; text-align: center; }
+.donate-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 3.5rem; max-width: 1100px; margin: 0 auto; }
+.donate-card { background: #fdfbf7; padding: 4rem 3rem; border-radius: 12px; }
+
+/* 8. CONTATOS */
+.contacts-row { display: flex; gap: 5rem; max-width: 1200px; margin: 0 auto; flex-wrap: wrap; }
+.contact-form { flex: 1.5; min-width: 320px; background: #fdfbf7; padding: 4rem; border-radius: 12px; }
+.contact-info { flex: 1; min-width: 300px; background: #573a28; color: #fff; padding: 4rem; border-radius: 12px; }
 
 /* ==========================================================================
-   2. BARRA DE NAVEGAÇÃO
+   MEDIA QUERIES (RESPONSIVIDADE FORÇADA PARA CELULAR)
    ========================================================================== */
-.header {
-    position: fixed;
-    top: 4.3rem; 
-    left: 0;
-    right: 0;
-    z-index: 99;
-    border-bottom: 0.1rem solid rgba(0, 0, 0, 0.1);
-    background-color: var(--bg);
-}
-
-.header section {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0.2rem 9%;
-}
-
-.navbar a {
-    margin: 0 1.2rem;
-    font-size: 1.7rem;
-    color: #fff;
-    font-weight: 500;
-    display: inline-block;
-    padding-bottom: 0.3rem;
-    transition: color 0.2s linear, border-bottom 0.1s linear;
-}
-
-.navbar a:hover {
-    color: var(--black);
-    border-bottom: 0.2rem solid var(--black);
-}
-
-.icons img {
-    margin-left: 1.5rem;
-    cursor: pointer;
-    vertical-align: middle;
-    max-height: 40px;
-    width: auto;
-    transition: transform 0.2s linear;
-}
-
-.icons img:hover {
-    transform: scale(1.1);
-}
-
-/* ==========================================================================
-   3. SEÇÃO HOME
-   ========================================================================== */
-.home-container {
-    background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("./background.png");
-    min-height: 100vh;
-    background-position: center;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-}
-
-.home-container section {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    min-height: calc(100vh - 11rem);
-    padding-top: 15rem; 
-    padding-bottom: 6rem;
-}
-
-.content {
-    max-width: 85rem;
-}
-
-.content h3 {
-    color: #fff;
-    font-size: 4.5rem;
-    margin-bottom: 1.5rem;
-}
-
-.content p {
-    color: #fff;
-    font-size: 2.2rem;
-    font-weight: 300;
-    line-height: 1.6;
-    padding: 1rem 0;
-}
-
-/* ==========================================================================
-   4. SEÇÃO SOBRE (.ABOUT)
-   ========================================================================== */
-.about {
-    background-color: var(--black);
-    max-width: 100%;
-}
-
-.about .title {
-    color: #fff;
-    margin-bottom: 6rem;
-}
-
-.about .title span {
-    color: var(--bg);
-}
-
-.about .row {
-    display: flex;
-    align-items: center;
-    gap: 5rem;
-}
-
-.about .container-image {
-    flex: 1;
-}
-
-.about .container-image img {
-    width: 100%;
-    border-radius: 12px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
-}
-
-.about .row .content {
-    flex: 1;
-}
-
-.about .row .content h3 {
-    font-size: 2.8rem;
-    color: #fdfbf7;
-    line-height: 1.4;
-    margin-bottom: 2rem;
-}
-
-.about .row .content p {
-    font-size: 1.6rem;
-    color: #dfd5cd;
-    padding: 0.8rem 0;
-    line-height: 1.8;
-    text-align: justify;
-}
-
-/* ==========================================================================
-   5. GALERIA DE IMAGENS (MAIORES E MAIS ESPAÇADAS)
-   ========================================================================== */
-.gallery-container {
-    max-width: 1100px;
-    margin: 8rem auto 0 auto;
-    padding: 0 1.5rem;
-    text-align: center;
-}
-
-.gallery-title {
-    font-size: 2.8rem;
-    color: #fff;
-    margin-bottom: 4rem;
-}
-
-.gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); 
-    gap: 2.5rem; 
-    justify-content: center;
-}
-
-.gallery-item {
-    height: 320px; 
-    overflow: hidden;
-    border-radius: 12px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
-    transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-}
-
-.gallery-item:hover {
-    transform: translateY(-5px);
-}
-
-.gallery-item img {
-    width: 100%;
-    height: 100%;
-    display: block;
-    object-fit: cover;
-}
-
-/* Centralização perfeita das últimas imagens em telas grandes */
-@media (min-width: 992px) {
-    .gallery-grid {
-        grid-template-columns: repeat(6, 1fr);
-    }
-    .gallery-item:nth-child(1), .gallery-item:nth-child(2), .gallery-item:nth-child(3) {
-        grid-column: span 2;
-    }
-    .gallery-item:nth-child(4) {
-        grid-column: 2 / span 2;
-    }
-    .gallery-item:nth-child(5) {
-        grid-column: 4 / span 2;
-    }
-}
-
-@media (max-width: 991px) {
-    .gallery-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 2rem;
-    }
-    .gallery-item { height: 280px; }
-}
-
-@media (max-width: 576px) {
-    .gallery-grid {
-        grid-template-columns: repeat(1, 1fr);
-        gap: 2rem;
-    }
-    .gallery-item { height: 250px; }
-}
-
-/* ==========================================================================
-   6. SEÇÃO CONSCIENTIZAÇÃO
-   ========================================================================== */
-.conscientizacao-container {
-    background-color: #573a28;
-    max-width: 100%;
-    text-align: center;
-}
-
-.conscientizacao-content {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.conscientizacao-content .subtitulo {
-    color: #f5d6c1;
-    font-size: 1.6rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 0.4rem;
-    display: block;
-    margin-bottom: 2.5rem;
-}
-
-.conscientizacao-content h2 {
-    font-size: 4rem;
-    color: #ffffff;
-    margin-bottom: 5rem;
-    line-height: 1.4;
-}
-
-.conscientizacao-content .texto-principal {
-    font-size: 1.7rem;
-    color: #fdfbf7;
-    line-height: 2.2;
-    max-width: 950px;
-    margin: 0 auto 4rem auto;
-    text-align: justify;
-}
-
-.cards-impacto {
-    display: flex;
-    gap: 3.5rem;
-    justify-content: space-between;
-    margin: 7rem 0;
-    flex-wrap: wrap;
-}
-
-.cards-impacto .card {
-    flex: 1;
-    min-width: 300px;
-    background: #fdfbf7;
-    padding: 4rem 3rem;
-    border-radius: 12px;
-    border-top: 5px solid var(--bg);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.cards-impacto .card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
-}
-
-.cards-impacto .card-icon { font-size: 3.5rem; margin-bottom: 1.5rem; }
-.cards-impacto .card h3 { font-size: 2.2rem; color: var(--black); margin-bottom: 1.8rem; }
-.cards-impacto .card p { font-size: 1.4rem; color: #555; line-height: 1.8; text-align: left; }
-
-.alerta-box {
-    background-color: var(--black);
-    color: #fff;
-    padding: 4rem 5rem;
-    border-radius: 12px;
-    font-style: italic;
-    font-size: 1.9rem;
-    line-height: 1.8;
-    margin: 7rem auto;
-    max-width: 950px;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
-}
-
-.action-footer { margin-top: 5rem; }
-.action-footer p { font-size: 1.6rem; color: #fdfbf7; margin-bottom: 2.5rem; }
-.conscientizacao-content .btn { background: var(--bg); }
-.conscientizacao-content .btn:hover { background: #fff; color: var(--black); }
-
-/* ==========================================================================
-   7. SEÇÃO DOAÇÕES (.DONATE) - CORRIGIDA PARA LADO A LADO FIXO
-   ========================================================================== */
-.donate-container {
-    background-color: var(--black);
-    max-width: 100%;
-    text-align: center;
-}
-
-.donate-container .title { color: #fff; }
-.donate-container .title span { color: var(--bg); }
-
-.donate-subtitle {
-    font-size: 1.6rem;
-    color: #dfd5cd;
-    max-width: 750px;
-    margin: 0 auto 6rem auto;
-    line-height: 1.8;
-}
-
-.donate-grid {
-    display: grid;
-    /* Garante que fiquem perfeitamente em 2 colunas uma do lado da outra */
-    grid-template-columns: repeat(2, 1fr); 
-    gap: 3.5rem; 
-    max-width: 1100px;
-    margin: 0 auto;
-}
-
-.donate-card {
-    background: #fdfbf7;
-    width: 100%; /* Ocupa o tamanho correto da coluna do grid */
-    padding: 4rem 3rem;
-    border-radius: 12px;
-    border-top: 5px solid var(--bg);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-}
-
-.donate-icon { font-size: 4rem; margin-bottom: 1.5rem; }
-.donate-card h3 { font-size: 2.4rem; color: var(--black); margin-bottom: 1.5rem; }
-.donate-card p { font-size: 1.5rem; color: #555; line-height: 1.6; }
-
-.pix-key {
-    display: inline-block;
-    background: #573a28;
-    color: #fff;
-    padding: 1rem 2rem;
-    font-size: 1.8rem;
-    border-radius: 6px;
-    margin: 2rem 0 1rem 0;
-    letter-spacing: 0.1rem;
-}
-
-.pix-info { font-size: 1.3rem !important; color: #666 !important; line-height: 1.5; }
-.donate-list { text-align: left; max-width: 250px; margin: 2rem auto 0 auto; font-size: 1.5rem; color: #444; line-height: 2; }
-
-/* ==========================================================================
-   8. SEÇÃO CONTATOS (.CONTACTS) & MEDIA QUERIES
-   ========================================================================== */
-.contacts-container {
-    background-color: var(--bg);
-    max-width: 100%;
-    text-align: center;
-}
-
-.contacts-subtitle {
-    font-size: 1.6rem;
-    color: var(--black);
-    max-width: 750px;
-    margin: 0 auto 6rem auto;
-    line-height: 1.8;
-}
-
-.contacts-row {
-    display: flex;
-    gap: 5rem;
-    max-width: 1200px;
-    margin: 0 auto;
-    text-align: left;
-    flex-wrap: wrap;
-}
-
-.contact-form {
-    flex: 1.5;
-    min-width: 320px;
-    background: #fdfbf7;
-    padding: 4rem;
-    border-radius: 12px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-}
-
-.input-box { margin-bottom: 2rem; }
-.input-box input, .input-box textarea {
-    width: 100%;
-    padding: 1.5rem;
-    font-size: 1.6rem;
-    background: #eee;
-    border-radius: 6px;
-    color: var(--black);
-}
-.input-box textarea { height: 15rem; resize: none; }
-
-.contact-info {
-    flex: 1;
-    min-width: 300px;
-    background: #573a28;
-    color: #fff;
-    padding: 4rem;
-    border-radius: 12px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-}
-
-.contact-info h3 { font-size: 2.6rem; margin-bottom: 1.5rem; }
-.contact-info p { font-size: 1.5rem; line-height: 1.6; margin-bottom: 3rem; color: #dfd5cd; }
-.info-item { font-size: 1.7rem; margin-bottom: 2rem; display: flex; align-items: center; gap: 1.5rem; }
-.info-item a { color: #fff; font-weight: bold; transition: color 0.2s; }
-.info-item a:hover { color: var(--bg); }
-
-.footer {
-    background: var(--black);
-    color: #dfd5cd;
-    text-align: center;
-    padding: 3rem 2rem;
-    font-size: 1.4rem;
-    border-top: 0.1rem solid rgba(255,255,255,0.1);
-}
-
 @media (max-width: 991px) {
     html { font-size: 55%; }
-    section { padding: 8rem 5%; }
-    .header section { padding: 1rem 5%; }
-    .about .row { flex-direction: column; gap: 3rem; }
+    .gallery-grid { grid-template-columns: repeat(2, 1fr); }
 }
 
 @media (max-width: 768px) {
-    .top-alert-banner { font-size: 1.3rem; padding: 1rem; }
-    .header { top: 5.2rem; } 
-    .header section { flex-direction: column; gap: 1.5rem; padding: 1.5rem 2rem; }
-    .navbar { display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; }
-    .navbar a { margin: 0 0.5rem; font-size: 1.5rem; }
+    /* Ajustes Gerais */
+    section { padding: 6rem 5% !important; }
+    .header { position: relative; top: 0; }
+    .top-alert-banner { position: relative; }
+    .header section { flex-direction: column; gap: 1.5rem; }
+    .navbar { flex-wrap: wrap; justify-content: center; }
     .icons { display: none; }
-    .home-container section { padding-top: 22rem; text-align: center; }
-    .content h3 { font-size: 3.2rem; }
-    .content p { font-size: 1.8rem; }
-    .cards-impacto { flex-direction: column; align-items: center; gap: 2.5rem; }
-    
-    /* Configuração responsiva para a área de doações em celulares */
-    .donate-grid {
-        grid-template-columns: 1fr;
-        gap: 2.5rem;
-    }
-    .contacts-row { flex-direction: column; }
-}
 
-/* SISTEMA DE ANIMAÇÃO */
-.scroll-animation {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-    will-change: opacity, transform;
-}
-
-.scroll-animation.animated-visible {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-@media (prefers-reduced-motion: reduce) {
-    .scroll-animation {
-        opacity: 1 !important;
-        transform: none !important;
-    }
-}
-
-/* --- CORREÇÃO FINAL PARA CELULAR (COPIE E COLE NO FINAL DO STYLE.CSS) --- */
-
-@media (max-width: 768px) {
-    /* Garante que nada ultrapasse a largura da tela do celular */
-    body {
-        overflow-x: hidden;
-        width: 100%;
-    }
-
-    /* Força todas as grids a ficarem em uma coluna apenas */
-    .donate-grid, 
-    .gallery-grid, 
-    .cards-impacto {
+    /* Ajustes das Grids (Forçando uma coluna apenas) */
+    .gallery-grid, .donate-grid, .cards-impacto, .contacts-row {
         grid-template-columns: 1fr !important;
-        display: block !important; /* Força um embaixo do outro */
-        width: 100%;
+        display: flex !important;
+        flex-direction: column !important;
     }
-
-    /* Ajusta o tamanho das seções para não cortarem */
-    section {
-        padding: 5rem 5%;
-    }
-
-    /* Garante que imagens não estourem a tela */
-    img {
-        max-width: 100%;
-        height: auto;
-    }
+    
+    .home-container section { padding-top: 10rem; text-align: center; }
+    .about .row { flex-direction: column; }
+    .card, .donate-card, .contact-form, .contact-info { width: 100%; min-width: 100%; }
 }
