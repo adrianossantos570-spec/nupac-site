@@ -75,11 +75,4 @@ document.addEventListener("DOMContentLoaded", () => {
             });
         });
     }
-
-    const btnMenu = document.getElementById('btn-menu');
-const menuMobile = document.querySelector('.menu-mobile');
-
-btnMenu.addEventListener('click', () => {
-    menuMobile.classList.toggle('ativo');
-});
 });
