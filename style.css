@@ -98,8 +98,8 @@ section {
 /* ==========================================================================
    MEDIA QUERIES (RESPONSIVIDADE FORÇADA PARA CELULAR)
    ========================================================================== */
-@media (max-width: 991px) {
-    html { font-size: 55%; }
+@media (max-width: 768px) {
+    html { font-size: 30%; }
     .gallery-grid { grid-template-columns: repeat(2, 1fr); }
 }
 
