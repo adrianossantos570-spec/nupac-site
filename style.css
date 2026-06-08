@@ -110,6 +110,19 @@ section {
     cursor: pointer;
 }
 
+/* Mobile */
+@media (max-width: 768px) {
+    .navbar { 
+        display: none; 
+        flex-direction: column; 
+        background: var(--black); 
+        padding: 2rem; 
+        border-radius: 8px;
+    }
+    .navbar.active { display: flex; }
+    .menu-toggle { display: block; }
+}
+
 .icons img {
     margin-left: 1.5rem;
     cursor: pointer;
