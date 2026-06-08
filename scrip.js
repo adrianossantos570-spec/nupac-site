@@ -25,6 +25,12 @@ document.addEventListener("DOMContentLoaded", () => {
                         top: targetPosition,
                         behavior: "smooth"
                     });
+
+                    // Fecha o menu hambúrguer após clicar em um link
+                    const navbar = document.querySelector(".navbar");
+                    if (navbar && navbar.classList.contains("active")) {
+                        navbar.classList.remove("active");
+                    }
                 }
             }
         });
@@ -73,6 +79,18 @@ document.addEventListener("DOMContentLoaded", () => {
                 console.error("Erro ao copiar: ", err);
                 window.open("https://www.instagram.com/nupac_ong/?hl=pt", "_blank");
             });
+        });
+    }
+
+    // ===================================================
+    // 4. MENU HAMBÚRGUER RESPONSIVO
+    // ===================================================
+    const toggle = document.querySelector('.menu-toggle');
+    const navbar = document.querySelector('.navbar');
+
+    if (toggle && navbar) {
+        toggle.addEventListener('click', () => {
+            navbar.classList.toggle('active');
         });
     }
 });
