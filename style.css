@@ -16,7 +16,7 @@
     outline: none;
     border: none;
     text-decoration: none;
-    text-transform: capitalize;
+    /* ❌ Removido o text-transform global */
     font-family: "Roboto", sans-serif;
 }
 
@@ -39,7 +39,7 @@ section {
     font-size: 4rem;
     color: var(--black);
     text-align: center;
-    text-transform: uppercase;
+    text-transform: uppercase; /* Mantém títulos em maiúsculas */
     margin-bottom: 2rem;
     letter-spacing: 0.1rem;
 }
