@@ -16,8 +16,8 @@
     outline: none;
     border: none;
     text-decoration: none;
-    /* ❌ Removido o text-transform global */
     font-family: "Roboto", sans-serif;
+    text-transform: none; /* ✅ Corrigido: mantém o texto como digitado */
 }
 
 html, body {
@@ -35,16 +35,31 @@ section {
     max-width: 1400px;
 }
 
+/* ✅ Mantém títulos em maiúsculas */
 .title {
     font-size: 4rem;
     color: var(--black);
     text-align: center;
-    text-transform: uppercase; /* Mantém títulos em maiúsculas */
+    text-transform: uppercase;
     margin-bottom: 2rem;
     letter-spacing: 0.1rem;
 }
 
 .title span { color: #fff; }
+
+/* ✅ Garante que subtítulos e parágrafos fiquem como escritos */
+h1, h2, h3, h4, h5, h6, p, .content p, 
+.about .row .content p, 
+.conscientizacao-content .texto-principal, 
+.cards-impacto .card p, 
+.donate-card p, 
+.contacts-subtitle, 
+.contact-info p, 
+.footer, 
+.alerta-box, 
+.action-footer p {
+    text-transform: none !important;
+}
 
 .btn {
     background: var(--main-color);
