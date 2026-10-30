@@ -4,227 +4,262 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="NUPAC – Núcleo de Proteção Animal de Curvelo (MG). ONG que resgata, cuida e encontra lar para cães e gatos de rua.">
+    <meta name="theme-color" content="#0f1115">
+    <title>NUPAC | ONG de Proteção Animal em Curvelo - MG</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <title>Nupac | ONG de Proteção Animal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <div class="alert" role="alert">⚠️ <strong>Atenção:</strong> a NUPAC não tem mais WhatsApp. Nosso único canal oficial é o Instagram <strong>@nupac_ong</strong>.</div>
 
-    <div class="top-alert-banner">
-        <p>⚠️ <strong>ATENÇÃO:</strong> A Nupac não tem mais WhatsApp! Nosso único canal oficial é o Instagram <strong>@nupac_ong</strong></p>
-    </div>
+    <header class="header">
+        <div class="container">
+            <a href="#home" class="logo" aria-label="NUPAC, ir para o início"><img src="logo.png" alt="Logotipo da NUPAC"></a>
+            <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+            <nav class="navbar" id="menu" aria-label="Principal">
+                <a href="#home">Início</a>
+                <a href="#about">Sobre</a>
+                <a href="#impact">Impacto</a>
+                <a href="#abandono">Abandono</a>
+                <a href="#conscientizacao">Conscientização</a>
+                <a href="#gallery">Galeria</a>
+                <a href="#donate">Doações</a>
+                <a href="#contacts">Contato</a>
+            </nav>
+        </div>
+    </header>
 
-   <header class="header">
-  <section>
-    <!-- Logo -->
-    <a href="#home" class="logo">
-      <img src="logo.png" alt="logo">
-    </a>
-
-    <!-- Botão hambúrguer -->
-    <div class="menu-toggle">&#9776;</div>
-
-    <!-- Menu de navegação -->
-    <nav class="navbar">
-      <a href="#home">Home</a>
-      <a href="#about">Sobre</a>
-      <a href="#conscientizacao">Conscientização</a>
-      <a href="#donate">Doações</a>
-      <a href="#contacts">Contatos</a>
-    </nav>
-  </section>
-</header>
-
-
-    <div class="home-container">
-        <section id="home">
-            <div class="content">
-                <h3>O que é a NUPAC?</h3>
-                <p>"Nossa missão é proteger quem não pode pedir ajuda. A NUPAC é uma organização sem fins lucrativos que
-                    acolhe cães e gatos de rua que enfrentam o abandono e o sofrimento diário. Mais do que resgatar, nós
-                    cuidamos, reabilitamos e lutamos para que cada animal encontre um lar cheio de amor."</p>
-                <a href="#about" class="btn">Nos Conheça Melhor</a>
+    <main>
+        <!-- HERO -->
+        <section class="hero" id="home">
+            <div class="container">
+                <span class="eyebrow" style="--i:0">ONG de proteção animal · Curvelo – MG</span>
+                <h1 style="--i:1">Proteger quem não pode <em>pedir ajuda.</em></h1>
+                <p style="--i:2">A NUPAC é uma organização sem fins lucrativos que acolhe cães e gatos de rua, cuida da saúde deles e luta para que cada um encontre um lar cheio de amor.</p>
+                <div class="actions" style="--i:3">
+                    <a href="#donate" class="btn">Fazer uma doação</a>
+                    <a href="#contacts" class="btn btn-ghost">Adotar ou ser voluntário</a>
+                </div>
+                <div class="chips" style="--i:4"><span>Desde 2015</span><span>Sem fins lucrativos</span><span>Cadastro ativo e regular</span></div>
             </div>
         </section>
-    </div>
 
-    <section class="about scroll-animation" id="about">
-        <h2 class="title">Sobre<span> Nós</span></h2>
-        <div class="row">
-            <div class="container-image">
-                <img src="./dog 2.jpeg" alt="sobre-nos">
-            </div>
-            <div class="content">
-                <h3>Proteção Animal e Solidariedade: Conhecendo o Trabalho da ONG NUPAC</h3>
-                <p>O Núcleo de Proteção Animal de Curvelo, amplamente conhecido pelo seu nome fantasia Nupac, é uma
-                    associação privada sem fins lucrativos que atua ativamente na defesa, resgate e cuidado de animais em situação de vulnerabilidade e abandono.</p>
-
-                <p>Fundada oficialmente em 6 de fevereiro de 2015, a instituição conta com uma trajetória sólida de
-                    mais de 11 anos de funcionamento com sua situação cadastral totalmente regular e ativa como matriz.
-                    Nascida da união de pessoas dedicadas à causa, a ONG surgiu para preencher uma lacuna urgente na
-                    região de Curvelo, transformando a realidade de cães e gatos de rua por meio do acolhimento,
-                    tratamento veterinário e conscientização da população.</p>
-
-                <p>Como não possui fins comerciais, o Nupac depende inteiramente do apoio da comunidade, de voluntários e de doações para manter suas atividades de pé.</p>
-
-                <p>Nas redes sociais, especialmente através do formato de Reels no Instagram, a ONG utiliza o ambiente
-                    digital como uma ferramenta poderosa de transformação e alcance.</p>
-
-                <a href="#conscientizacao" class="btn">Saiba Mais</a>
-            </div>
-        </div>
-
-        <div class="gallery-container scroll-animation">
-            <h3 class="gallery-title">Nossos Resgatados & Atividades</h3>
-            <div class="gallery-grid">
-                <div class="gallery-item">
-                    <img src="dog .jpeg" alt="Animal Resgatado 1">
-                </div>
-                <div class="gallery-item">
-                    <img src="dog 3.jpeg" alt="Animal Resgatado 2">
-                </div>
-                <div class="gallery-item">
-                    <img src="dog 4.jpeg" alt="Evento Nupac">
-                </div>
-                <div class="gallery-item">
-                    <img src="dog 5.jpeg" alt="Animal Resgatado 4">
-                </div>
-                <div class="gallery-item">
-                    <img src="dog 6.jpeg" alt="Animal Resgatado 5">
+        <!-- SOBRE -->
+        <section class="about" id="about">
+            <div class="container grid">
+                <figure class="reveal"><img src="dog%202.jpeg" alt="Cão resgatado pela NUPAC" loading="lazy"></figure>
+                <div class="text reveal" style="--i:1">
+                    <span class="eyebrow">Sobre nós</span>
+                    <h2>Proteção animal e solidariedade em Curvelo</h2>
+                    <p>O Núcleo de Proteção Animal de Curvelo, conhecido como NUPAC, é uma associação privada sem fins lucrativos que atua no resgate, na defesa e no cuidado de animais em situação de vulnerabilidade e abandono.</p>
+                    <p>Fundada em 6 de fevereiro de 2015, a ONG nasceu da união de pessoas dedicadas à causa, para suprir uma lacuna urgente na região: acolher, tratar e conscientizar a população.</p>
+                    <p>Por não ter fins comerciais, a NUPAC depende do apoio da comunidade, de voluntários e de doações. Nas redes sociais, principalmente nos Reels do Instagram, mostramos o dia a dia dos resgatados.</p>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="conscientizacao" class="conscientizacao-container">
-        <div class="conscientizacao-content">
-            <span class="subtitulo">Conscientização Nacional</span>
-            <h2>O Invisível Sofre: Entenda o Impacto Real do Abandono Animal</h2>
-
-            <p class="texto-principal">
-                Todos os dias, milhares de cães e gatos são deixados à própria sorte em ruas, avenidas e terrenos
-                baldios por todo o país. O abandono é uma das formas mais cruéis de violência psicológica e física
-                contra um ser vivo. Esta prática retira do animal sua única fonte de proteção, alimento e afeto,
-                deixando-o completamente indefeso diante dos perigos do mundo exterior e quebrando um lço de confiança
-                que nunca mais será totalmente recuperado.
-            </p>
-
-            <div class="cards-impacto">
-                <div class="card scroll-animation">
-                    <div class="card-icon">🐾</div>
-                    <h3>O que eles enfrentam nas ruas?</h3>
-                    <p>A realidade das ruas é implacável. Sem ninguém por eles, os animais enfrentam a fome e a sede
-                        extrema, dependendo de revirar sacos de lixo ou da boa vontade de estranhos para sobreviver.
-                        Ficam expostos ao frio intenso, temporais, violência física, brigas por território e ao risco
-                        constante de atropelamentos em vias movimentadas.</p>
+        <!-- MISSÃO -->
+        <section id="missao">
+            <div class="container">
+                <div class="sec-head center reveal">
+                    <span class="eyebrow">Nossa missão</span>
+                    <h2>Do resgate ao novo lar</h2>
                 </div>
-
-                <div class="card scroll-animation">
-                    <div class="card-icon">⚠️</div>
-                    <h3>Um problema de Saúde Pública</h3>
-                    <p>O após-abandono afeta a todos. A falta de controle populacional gera uma reprodução desenfreada, 
-                        aumentando o número de animais errantes. Isso contribui para a transmissão de zoonoses e acidentes 
-                        de trânsito. Vale lembrar: abandonar animais é <strong>crime federal</strong> com pena de prisão.</p>
-                </div>
-
-                <div class="card scroll-animation">
-                    <div class="card-icon">❤️</div>
-                    <h3>Como você pode mudar isso?</h3>
-                    <p>A transformação começa com a guarda responsável: planeje os custos e o tempo antes de adotar. A
-                        castração é o único método eficaz para evitar ninhadas indesejadas que acabam nas ruas. Além
-                        disso, se você não puder adotar, apoie quem resgata. A NUPAC depende de doações para continuar salvando vidas.</p>
+                <div class="cards">
+                    <article class="card reveal"><div class="icon" aria-hidden="true">🐾</div><h3>Resgatar</h3><p>Acolhemos cães e gatos que enfrentam abandono, fome e violência nas ruas.</p></article>
+                    <article class="card reveal" style="--i:1"><div class="icon" aria-hidden="true">🩺</div><h3>Cuidar</h3><p>Tratamento veterinário e reabilitação para que cada animal se recupere.</p></article>
+                    <article class="card reveal" style="--i:2"><div class="icon" aria-hidden="true">📣</div><h3>Conscientizar</h3><p>Informação sobre guarda responsável e castração para evitar novos abandonos.</p></article>
+                    <article class="card reveal" style="--i:3"><div class="icon" aria-hidden="true">🏡</div><h3>Encontrar um lar</h3><p>Lutamos para que cada animal seja adotado por uma família preparada.</p></article>
                 </div>
             </div>
+        </section>
 
-            <div class="alerta-box scroll-animation">
-                <p>"Mudar o mundo para um animal pode não mudar o mundo inteiro, mas para aquele animal que foi salvo, o
-                    mundo mudará para sempre. Pratique a compaixão e nunca vire as costas para quem só sabe te amar."</p>
+        <!-- IMPACTO -->
+        <section class="impact" id="impact">
+            <div class="container">
+                <div class="sec-head center reveal">
+                    <span class="eyebrow">Impacto e transparência</span>
+                    <h2>Nosso trabalho em números</h2>
+                </div>
+                <div class="stats">
+                    <!-- ATENÇÃO: valores ESTIMADOS (ONG pequena, ~11 anos: ~45 resgates/ano, seguidores do Instagram são reais, vistos no perfil). Substitua pelos números reais da NUPAC em data-count. -->
+                    <div class="stat reveal"><strong data-count="years" data-suffix="+">0</strong><span>anos de atuação</span></div>
+                    <div class="stat reveal" style="--i:1"><strong data-count="500" data-suffix="+">0</strong><span>animais resgatados</span></div>
+                    <div class="stat reveal" style="--i:2"><strong data-count="15" data-suffix="+">0</strong><span>lares temporários</span></div>
+                    <div class="stat reveal" style="--i:3"><strong data-count="14" data-suffix=" mil+">0</strong><span>seguidores no Instagram</span></div>
+                </div>
+                <p class="transparency reveal">Associação privada sem fins lucrativos, com situação cadastral regular. Toda doação é revertida para a causa animal. Números aproximados.</p>
+                <h3 class="subhead reveal">O que cada ação muda na prática</h3>
+                <div class="cards">
+                    <article class="card reveal"><div class="icon" aria-hidden="true">🐾</div><h3>Resgate</h3><p>Tira o animal de riscos como atropelamento, fome, brigas e doenças. É o primeiro passo para ele ser tratado e reabilitado.</p></article>
+                    <article class="card reveal" style="--i:1"><div class="icon" aria-hidden="true">✂️</div><h3>Castração</h3><p>Evita ninhadas indesejadas, que são a origem de boa parte dos animais de rua. É a ação que mais reduz o problema a longo prazo, e é onde a NUPAC também apoia a Prefeitura.</p></article>
+                    <article class="card reveal" style="--i:2"><div class="icon" aria-hidden="true">🏠</div><h3>Lar temporário</h3><p>Abre espaço para novos resgates e prepara o animal para a convivência, o que facilita a adoção definitiva.</p></article>
+                    <article class="card reveal" style="--i:3"><div class="icon" aria-hidden="true">📱</div><h3>Divulgação nas redes</h3><p>Com mais de 14 mil seguidores no Instagram, cada publicação ajuda a encontrar adotantes, doadores e voluntários.</p></article>
+                </div>
             </div>
+        </section>
 
-            <div class="action-footer scroll-animation">
-                <p>Quer fazer a diferença hoje mesmo? Apoie o nosso projeto e ajude a manter nossos resgatados protegidos.</p>
-                <a href="#donate" class="btn">Quero Ajudar a NUPAC</a>
-            </div>
-        </div>
-    </section>
 
-    <section id="donate" class="donate-container">
-        <div class="scroll-animation">
-            <h2 class="title">Faça uma <span>Doação</span></h2>
-            <p class="donate-subtitle">Como uma ONG sem fins lucrativos, cada colaboração é revertida diretamente para a causa animal!</p>
-        </div>
+        <!-- ABANDONO EM CURVELO -->
+        <section id="abandono">
+            <div class="container">
+                <div class="sec-head reveal">
+                    <span class="eyebrow">Abandono em Curvelo</span>
+                    <h2>O que se sabe sobre o abandono de animais na cidade</h2>
+                    <p>Não existe, até onde pesquisamos, uma taxa oficial publicada de abandono para Curvelo. Veja o que dá para afirmar com segurança e por que esse número é tão difícil de medir.</p>
+                </div>
+                <div class="cards">
+                    <article class="card reveal"><div class="icon" aria-hidden="true">🇧🇷</div><h3>Brasil: cerca de 30 milhões</h3><p>A OMS estima mais de 30 milhões de cães e gatos em situação de abandono no país, cerca de 20 milhões de cães e 10 milhões de gatos. É uma estimativa: o Brasil não tem estatística oficial.</p></article>
+                    <article class="card reveal" style="--i:1"><div class="icon" aria-hidden="true">📍</div><h3>Curvelo: sem taxa oficial</h3><p>Não encontramos um levantamento público do número de animais abandonados na cidade. Por isso a NUPAC não divulga um índice local: preferimos não inventar números.</p></article>
+                    <article class="card reveal" style="--i:2"><div class="icon" aria-hidden="true">🏛️</div><h3>O que Curvelo já faz</h3><p>A Lei Municipal 3.391/2020 criou o programa de bem-estar animal e controle populacional, e proíbe o extermínio sistemático. Um mutirão gratuito da Prefeitura, com apoio da NUPAC e da ONG AJUDA, castrou 354 animais em dois dias.</p></article>
+                </div>
 
-        <div class="donate-grid">
-            <div class="donate-card scroll-animation">
-                <div class="donate-icon">⚡</div>
-                <h3>Via PIX</h3>
-                <p>A chave Pix para doações permanece a mesma. Apoie o nosso trabalho!</p>
-                <strong class="pix-key" id="pixKey">(38) 98846-4483</strong>
-                <p class="pix-info">Chave tipo: Celular<br>A Nupac agradece a todos que colaboram!</p>
-                
-                <button type="button" class="btn" id="btnCopyPix" style="margin-top: 1.5rem; padding: 1rem 2rem; font-size: 1.4rem; width: 100%;" 
-                        onclick="navigator.clipboard.writeText('38988464483').then(() => { 
-                            this.innerText = 'Chave Copiada! ✓'; 
-                            this.style.backgroundColor = '#1e1611'; 
-                            setTimeout(() => { this.innerText = 'Copiar Chave Pix'; this.style.backgroundColor = ''; }, 2500); 
-                        }).catch(err => console.error(err))">
-                    Copiar Chave Pix
-                </button>
-            </div>
-
-            <div class="donate-card scroll-animation">
-                <div class="donate-icon">🛒</div>
-                <h3>Outros Suportes</h3>
-                <p>Você também pode contribuir diretamente entregando mantimentos essenciais:</p>
-                <ul class="donate-list">
-                    <li>Sacos de Ração (Cães e Gatos)</li>
-                    <li>Medicamentos Veterinários</li>
-                    <li>Produtos de Higiene e Limpeza</li>
+                <h3 class="subhead reveal">Por que é difícil medir o abandono</h3>
+                <ul class="check reveal" style="max-width:46rem;margin-inline:auto">
+                    <li>Abandono raramente é registrado: a maioria dos casos nunca vira denúncia.</li>
+                    <li>Prefeitura, ONGs e protetores independentes guardam seus próprios números, sem unificação.</li>
+                    <li>"Animal de rua" nem sempre é abandonado: pode ser semi-domiciliado ou ter nascido na rua.</li>
+                    <li>Os animais circulam entre bairros e cidades vizinhas, e a contagem se perde.</li>
                 </ul>
+
+                <div class="quote reveal">O mutirão de castrações é um sinal claro: a demanda por controle populacional em Curvelo é grande. Quanto menos ninhadas sem destino, menos animais chegam às ruas e aos pedidos de resgate.</div>
+
+                <p class="sources reveal">Fontes: <a href="https://curvelo.mg.gov.br/curvelo-realiza-mais-354-castracoes-em-mutirao-e-reforca-politica-de-saude-unica" target="_blank" rel="noopener">Prefeitura de Curvelo (mutirão de castração)</a> · <a href="https://leismunicipais.com.br/a/mg/c/curvelo/lei-ordinaria/2020/340/3391/lei-ordinaria-n-3391-2020-institui-o-programa-de-bem-estar-animal-e-saude-publica-o-controle-e-protecao-populacional-de-caes-e-gatos-bem-como-a-prevencao-e-combate-a-zoonoses-proibindo-o-exterminio-sistematico-de-animais-urbanos-e-atos-de-crueldade-contra-animais-de-tracao-carga-ou-montados-e-da-outras-providencias" target="_blank" rel="noopener">Lei Municipal 3.391/2020</a> · <a href="https://www.agenciaminas.mg.gov.br/news/pdf/107797.pdf" target="_blank" rel="noopener">Agência Minas (estimativa da OMS)</a> · <a href="https://www.instagram.com/nupac_ong/" target="_blank" rel="noopener">Instagram da NUPAC</a></p>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="contacts" class="contacts-container">
-        <div class="scroll-animation">
-            <h2 class="title">Entre em <span>Contato</span></h2>
-            <p class="contacts-subtitle">O único canal oficial de comunicação é através do Instagram. Use o formulário abaixo para enviar sua mensagem por lá!</p>
-        </div>
-
-        <div class="contacts-row">
-            <form class="contact-form scroll-animation" id="instaForm">
-                <div class="input-box">
-                    <input type="text" id="instaName" placeholder="Seu Nome completo" required>
+        <!-- CONSCIENTIZAÇÃO -->
+        <section id="conscientizacao">
+            <div class="container">
+                <div class="sec-head reveal">
+                    <span class="eyebrow">Conscientização</span>
+                    <h2>O invisível sofre: o impacto real do abandono</h2>
+                    <p>Todos os dias, cães e gatos são deixados à própria sorte nas ruas do país. O abandono tira do animal sua única fonte de proteção, alimento e afeto.</p>
                 </div>
-                <div class="input-box">
-                    <textarea id="instaMessage" placeholder="Olá NUPAC! Gostaria de falar sobre..." required></textarea>
+                <div class="cards">
+                    <article class="card reveal"><div class="icon" aria-hidden="true">🐾</div><h3>O que eles enfrentam</h3><p>Fome e sede, frio, temporais, brigas por território, violência e risco constante de atropelamento.</p></article>
+                    <article class="card reveal" style="--i:1"><div class="icon" aria-hidden="true">⚠️</div><h3>Um problema de saúde pública</h3><p>Sem controle populacional, aumentam os animais errantes, as zoonoses e os acidentes. Abandonar animais é <strong>crime federal</strong>, com pena de prisão.</p></article>
+                    <article class="card reveal" style="--i:2"><div class="icon" aria-hidden="true">❤️</div><h3>Como você pode ajudar</h3><p>Pratique a guarda responsável, castre seu animal e, se não puder adotar, apoie quem resgata.</p></article>
                 </div>
-                <button type="submit" class="btn" style="width: 100%; text-align: center;">Copiar e Abrir Instagram</button>
-            </form>
-
-            <div class="contact-info scroll-animation">
-                <h3>Canais Oficiais</h3>
-                <p>Fique atento: Não utilizamos mais o WhatsApp para atendimento de solicitações.</p>
-                
-                <div class="info-item">
-                    <span>📍</span> Curvelo - MG, Brasil
-                </div>
-                <div class="info-item">
-                    <span>📸</span> <a href="https://www.instagram.com/nupac_ong/?hl=pt" target="_blank">@nupac_ong</a>
-                </div>
-                <div class="info-item">
-                    <span>📧</span> contato@nupac.org
+                <blockquote class="quote reveal">“Mudar o mundo para um animal pode não mudar o mundo inteiro, mas para aquele animal que foi salvo, o mundo mudará para sempre.”</blockquote>
+                <div class="cta-row reveal">
+                    <p>Quer fazer a diferença hoje mesmo?</p>
+                    <a href="#donate" class="btn">Quero ajudar a NUPAC</a>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+
+        <!-- GALERIA -->
+        <section class="gallery" id="gallery">
+            <div class="container">
+                <div class="sec-head reveal">
+                    <span class="eyebrow">Galeria</span>
+                    <h2>Nossos resgatados e atividades</h2>
+                    <p>Clique em uma foto para ampliar.</p>
+                </div>
+                <div class="carousel reveal" role="region" aria-roledescription="carrossel" aria-label="Fotos dos resgatados">
+                    <button class="nav-btn prev" aria-label="Fotos anteriores">‹</button>
+                    <div class="track">
+                        <button class="slide" aria-label="Ampliar foto 1"><img src="dog%20.jpeg" alt="Cão resgatado pela NUPAC" loading="lazy"></button>
+                        <button class="slide" aria-label="Ampliar foto 2"><img src="dog%203.jpeg" alt="Cão acolhido pela NUPAC" loading="lazy"></button>
+                        <button class="slide" aria-label="Ampliar foto 3"><img src="dog%204.jpeg" alt="Evento da NUPAC" loading="lazy"></button>
+                        <button class="slide" aria-label="Ampliar foto 4"><img src="dog%205.jpeg" alt="Animal resgatado aguardando adoção" loading="lazy"></button>
+                        <button class="slide" aria-label="Ampliar foto 5"><img src="dog%206.jpeg" alt="Cão resgatado e cuidado pela NUPAC" loading="lazy"></button>
+                    </div>
+                    <button class="nav-btn next" aria-label="Próximas fotos">›</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- DOAÇÕES -->
+        <section id="donate">
+            <div class="container">
+                <div class="sec-head center reveal">
+                    <span class="eyebrow">Doações</span>
+                    <h2>Faça uma doação</h2>
+                    <p>Cada colaboração é revertida diretamente para a causa animal.</p>
+                </div>
+                <div class="donate-grid">
+                    <article class="card reveal">
+                        <div class="icon" aria-hidden="true">⚡</div>
+                        <h3>Via Pix</h3>
+                        <strong class="pix" id="pixKey">(38) 98846-4483</strong>
+                        <p class="pix-info">Chave do tipo celular. A NUPAC agradece a quem colabora!</p>
+                        <button type="button" class="btn btn-block" id="btnCopyPix">Copiar chave Pix</button>
+                    </article>
+                    <article class="card reveal" style="--i:1">
+                        <div class="icon" aria-hidden="true">🛒</div>
+                        <h3>Outros apoios</h3>
+                        <p>Você também pode entregar mantimentos essenciais:</p>
+                        <ul class="check">
+                            <li>Sacos de ração (cães e gatos)</li>
+                            <li>Medicamentos veterinários</li>
+                            <li>Produtos de higiene e limpeza</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTATO -->
+        <section class="contact" id="contacts">
+            <div class="container">
+                <div class="sec-head center reveal">
+                    <span class="eyebrow">Contato</span>
+                    <h2>Fale com a NUPAC</h2>
+                    <p>Nosso único canal oficial é o Instagram. Escreva abaixo e a mensagem será copiada para você colar lá.</p>
+                </div>
+                <div class="contact-grid">
+                    <form class="card reveal form" id="instaForm">
+                        <div class="field"><label for="instaName">Seu nome completo</label><input type="text" id="instaName" autocomplete="name" required></div>
+                        <div class="field"><label for="instaMessage">Mensagem</label><textarea id="instaMessage" placeholder="Olá NUPAC! Gostaria de falar sobre…" required></textarea></div>
+                        <button type="submit" class="btn btn-block">Copiar e abrir Instagram</button>
+                        <p class="status" id="formStatus" role="status" aria-live="polite"></p>
+                    </form>
+                    <aside class="card reveal" style="--i:1">
+                        <h3>Canais oficiais</h3>
+                        <p>Não usamos mais o WhatsApp para atendimento.</p>
+                        <div class="info-item"><span aria-hidden="true">📍</span> Curvelo – MG, Brasil</div>
+                        <div class="info-item"><span aria-hidden="true">📸</span> <a href="https://www.instagram.com/nupac_ong/?hl=pt" target="_blank" rel="noopener">@nupac_ong</a></div>
+                        <div class="info-item"><span aria-hidden="true">📧</span> <a href="mailto:contato@nupac.org">contato@nupac.org</a></div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <footer class="footer">
-        <p>&copy; 2026 NUPAC - Núcleo de Proteção Animal de Curvelo. Todos os direitos reservados.</p>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <img src="logo.png" alt="Logotipo da NUPAC" height="40" style="height:2.8rem;width:auto">
+                    <p>Núcleo de Proteção Animal de Curvelo. Resgatar, cuidar e encontrar um lar.</p>
+                </div>
+                <nav aria-label="Links rápidos">
+                    <h3>Links rápidos</h3>
+                    <ul><li><a href="#about">Sobre</a></li><li><a href="#conscientizacao">Conscientização</a></li><li><a href="#gallery">Galeria</a></li><li><a href="#donate">Doações</a></li></ul>
+                </nav>
+                <div>
+                    <h3>Siga a NUPAC</h3>
+                    <a class="social" href="https://www.instagram.com/nupac_ong/?hl=pt" target="_blank" rel="noopener" aria-label="Instagram da NUPAC">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.6"/></svg>
+                    </a>
+                </div>
+            </div>
+            <p class="copy">&copy; 2026 NUPAC – Núcleo de Proteção Animal de Curvelo. Todos os direitos reservados.</p>
+        </div>
     </footer>
+
+    <div class="lightbox" role="dialog" aria-modal="true" aria-label="Foto ampliada">
+        <button class="lb-close" aria-label="Fechar">✕</button>
+        <button class="lb-prev" aria-label="Foto anterior">‹</button>
+        <img src="" alt="">
+        <button class="lb-next" aria-label="Próxima foto">›</button>
+    </div>
 
     <script src="script.js"></script>
 </body>
